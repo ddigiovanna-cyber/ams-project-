@@ -1,0 +1,13 @@
+﻿services:
+  ams-museum:
+    build: .
+    container_name: ams-archaeological-matrix
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - AMS_ADMIN_USER=archeologo
+      - AMS_ADMIN_PASS=CambiaQuestaPassword2026!
+    volumes:
+      - ./static/models:/app/static/models
+      - ./ams_museum.db:/app/ams_museum.db

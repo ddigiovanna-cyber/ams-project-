@@ -1,17 +1,10 @@
-# Ambiente Python
-__pycache__/
+﻿__pycache__/
 *.py[cod]
-*$py.class
 venv/
 .env
-
-# Database e file caricati dai curatori in produzione
 ams_museum.db
 static/models/*.glb
 static/models/*.usdz
 !static/models/.gitkeep
-
-# Sistema operativo
 .DS_Store
 Thumbs.db
-
